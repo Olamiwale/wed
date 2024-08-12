@@ -27,13 +27,13 @@ function Countdown() {
   }, []);
 
   return (
-    <div className="countdown-container">
+    <div className="countdown-container p-8">
       <h1 className="font-bold p-5 text-2xl">Countdown to August 16, 2024</h1>
-      <div id="countdown">
-        <div className='text-[25px]'>{timeLeft.textDay} Days</div>
-        <div className='text-[25px] '>{timeLeft.textHour} Hours</div>
-        <div className='text-[25px] '>{timeLeft.textMinute} Minutes</div>
-        <div className='text-[25px] '>{timeLeft.textSecond} Seconds</div>
+      <div className='flex font-bold gap-10'>
+        <div className='text-[20px] '>{timeLeft.textDay} Days</div>
+        <div className='text-[20px] '>{timeLeft.textHour} Hours</div>
+        <div className='text-[20px] '>{timeLeft.textMinute} Minutes</div>
+        <div className='text-[20px] '>{timeLeft.textSecond} Seconds</div>
       </div>
     </div>
   );
